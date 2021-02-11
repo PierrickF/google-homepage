@@ -10,15 +10,7 @@
 
             a+a {
                 margin-left: 10px;
-            }
-
-            a:link {
-                color: rgba(0, 0, 0, 0.87);
-                text-decoration: none;
-            }
-
-            a:hover {
-                text-decoration: underline;
+                margin-right: 10px;
             }
 
             .navbar{
@@ -28,9 +20,18 @@
                 flex-direction: row;
                 justify-content: flex-end;
                 padding: 15px 30px;
-                font-size: 13px;
-                }
-            .body{
+                font-size: 13px;    
+            }
+            .navbar a:link {
+                color: rgba(0, 0, 0, 0.87);
+                text-decoration: none;
+            }
+            .navbar a:hover {
+                color: rgba(0, 0, 0, 0.87);
+                text-decoration: underline;
+
+            }
+            .body {
                 grid-area: body;
                 background: white;
                 display: flex;
@@ -38,7 +39,8 @@
                 justify-content: center;
                 align-items: center;
                 }
-            .top-footer{
+
+            .top-footer {
                 grid-area: top-footer;
                 background: #f2f2f2;
                 color: rgba(0, 0, 0, 0.54);
@@ -50,7 +52,7 @@
                 padding: 15px 30px;
                 }
 
-            .bot-footer-left{
+            .bot-footer-left {
                 grid-area: bot-footer-left;
                 background: #f2f2f2;
                 color: rgba(0, 0, 0, 0.54);
@@ -60,9 +62,18 @@
                 display: flex;
                 flex-direction: row;
                 padding: 15px 30px;
+                font-size: 14px;
                 }
+            .bot-footer-left a:link{
+                color: rgba(0, 0, 0, 0.54);
+                text-decoration: none;
+            }
+            .bot-footer-left a:hover{
+                color: rgba(0, 0, 0, 0.54);
+                text-decoration: underline;
+            }
 
-            .bot-footer-right{
+            .bot-footer-right {
                 grid-area: bot-footer-right;
                 background: #f2f2f2;
                 color: rgba(0, 0, 0, 0.54);
@@ -70,9 +81,18 @@
                 border-bottom-style: solid;
                 border-bottom-width: 1px;
                 display: flex;
-                flex-direction: row;
+                flex-direction: row-reverse;
                 padding: 15px 30px;
+                font-size: 14px;
                 }
+            .bot-footer-right a:link{
+                color: rgba(0, 0, 0, 0.54);
+                text-decoration: none;
+            }
+            .bot-footer-right a:hover{
+                color: rgba(0, 0, 0, 0.54);
+                text-decoration: underline;
+            }
 
             .container {
                 font-family: arial, sans-serif;
@@ -94,8 +114,8 @@
 
     <body>
         <div class="container">
-            <div class="navbar">
-                <a href="#">Gmail</a>
+            <div class="navbar" id="navbar">
+                <a href="#" >Gmail</a>
                 <a href="#">Images</a>
             </div>
             <div class="body">body</div>
@@ -107,10 +127,10 @@
                 <a href="#">How Search works</a>
             </div>
             <div class="bot-footer-right">
-                <a href="#">About</a>
-                <a href="#">Advertising</a>
-                <a href="#">Business</a>
-                <a href="#">How Search works</a>
+                <a href="#">Settings</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Consumer Information</a>
             </div>
         </div>
     </body>
