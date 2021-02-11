@@ -22,20 +22,24 @@
             }
 
             .navbar{
-                background: LightSkyBlue;
+                grid-area: navbar;
+                background: white;
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-end;
                 padding: 15px 30px;
+                font-size: 13px;
                 }
             .body{
-                background: LightSalmon;
+                grid-area: body;
+                background: white;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 }
             .footer1{
+                grid-area: footer1;
                 background: #f2f2f2;
                 color: rgba(0, 0, 0, 0.54);
                 border-bottom-color: #dadce0;
@@ -46,9 +50,25 @@
                 padding: 15px 30px;
                 }
 
-            .footer2{
+            .footer2left{
+                grid-area: footer2left;
                 background: #f2f2f2;
                 color: rgba(0, 0, 0, 0.54);
+                border-bottom-color: #dadce0;
+                border-bottom-style: solid;
+                border-bottom-width: 1px;
+                display: flex;
+                flex-direction: row;
+                padding: 15px 30px;
+                }
+
+            .footer2right{
+                grid-area: footer2right;
+                background: #f2f2f2;
+                color: rgba(0, 0, 0, 0.54);
+                border-bottom-color: #dadce0;
+                border-bottom-style: solid;
+                border-bottom-width: 1px;
                 display: flex;
                 flex-direction: row;
                 padding: 15px 30px;
@@ -62,6 +82,12 @@
                 width: 100vw;
                 display: grid;
                 grid-template-rows: 5% 85% 5% 5%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    "navbar navbar"
+                    "body body"
+                    "footer1 footer1"
+                    "footer2left footer2right";
             }
         </style>    
     </head>
@@ -74,7 +100,18 @@
             </div>
             <div class="body">body</div>
             <div class="footer1">France</div>
-            <div class="footer2">footer2</div>
+            <div class="footer2left">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div class="footer2right">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
         </div>
     </body>
 </html>
