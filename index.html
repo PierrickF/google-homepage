@@ -8,6 +8,19 @@
                 margin: 0;
                 }
 
+            a+a {
+                margin-left: 10px;
+            }
+
+            a:link {
+                color: rgba(0, 0, 0, 0.87);
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
             .navbar{
                 background: LightSkyBlue;
                 display: flex;
@@ -23,14 +36,19 @@
                 align-items: center;
                 }
             .footer1{
-                background: PaleTurquoise;
+                background: #f2f2f2;
+                color: rgba(0, 0, 0, 0.54);
+                border-bottom-color: #dadce0;
+                border-bottom-style: solid;
+                border-bottom-width: 1px;
                 display: flex;
                 flex-direction: row;
                 padding: 15px 30px;
                 }
 
             .footer2{
-                background: palevioletred;
+                background: #f2f2f2;
+                color: rgba(0, 0, 0, 0.54);
                 display: flex;
                 flex-direction: row;
                 padding: 15px 30px;
@@ -50,7 +68,10 @@
 
     <body>
         <div class="container">
-            <div class="navbar">navbar</div>
+            <div class="navbar">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+            </div>
             <div class="body">body</div>
             <div class="footer1">France</div>
             <div class="footer2">footer2</div>
