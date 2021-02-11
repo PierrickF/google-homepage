@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        Google homepage mockup.
+        <style>
+            body, html {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                }
+
+            .item1{background: LightSkyBlue;}
+            .item2{background: LightSalmon;}
+            .item3{background: PaleTurquoise;}
+
+            .container {
+                font-size: 40px;
+                background: lightgrey;
+                height: 100vh;
+                width: 100vw;
+                display: grid;
+                grid-template-rows: 5% 85% 10%;
+            }
+        </style>    
     </head>
-    <br>
+
     <body>
-        Actual work goes here.
+        <div class="container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+        </div>
     </body>
 </html>
