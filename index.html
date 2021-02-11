@@ -29,8 +29,8 @@
             .navbar a:hover {
                 color: rgba(0, 0, 0, 0.87);
                 text-decoration: underline;
-
             }
+
             .logo {
                 grid-area: logo;
                 background: white;
@@ -52,15 +52,43 @@
                 background-color: teal;
                 }
 
-            .submit {
-                grid-area: submit;
+            .submit-left {
+                grid-area: submit-left;
                 background: white;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: flex-start;
                 background-color: purple;
+                padding-left: 800px;
                 }
+            .submit-right {
+                grid-area: submit-right;
+                background: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                background-color: greenyellow;
+                padding-right: 780px;
+                }
+
+            .offered {
+                grid-area: offered;
+                background: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                background-color: brown;
+                }
+
+            .offered a:link {
+                text-decoration: none;
+            }
+            .offered a:hover {
+                text-decoration: underline;
+            }
 
             .top-footer {
                 grid-area: top-footer;
@@ -123,13 +151,14 @@
                 height: 100vh;
                 width: 100vw;
                 display: grid;
-                grid-template-rows: 5% 34% 5% 46% 5% 5%;
+                grid-template-rows: 5% 34% 5% 5% 41% 5% 5%;
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas:
                     "navbar navbar"
                     "logo logo"
                     "search search"
-                    "submit submit"
+                    "submit-left submit-right"
+                    "offered offered"
                     "top-footer top-footer"
                     "bot-footer-left bot-footer-right";
             }
@@ -148,9 +177,13 @@
             <div class="search">
                 <input type="text" size="50">
             </div>
-            <div class="submit">
+            <div class="submit-left">
                 <button type="submit">Google Search</button>
             </div>
+            <div class="submit-right">
+                <button type="submit">I'm Feeling Lucky</button>
+            </div>
+            <div class="offered">Google offered in: <a href="#">Français</a></div>
             <div class="top-footer">France</div>
             <div class="bot-footer-left">
                 <a href="#">About</a>
