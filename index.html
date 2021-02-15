@@ -41,14 +41,15 @@
             bot_footer {
                 background: white;
                 display: flex;
+                flex-direction: row;
             }
 
             bot_footer .left {
-                justify-content: flex-start;
+                margin-left: 0px;
             }
 
             bot_footer .right {
-                justify-content: flex-end;
+                margin-left: auto;
             }
 
         </style>    
@@ -92,23 +93,18 @@
         </top_footer>
         
         <bot_footer>
-            <bot_footer .left>
-            <div class="bot_footer_left">
+            <div class="left">
                 <a href="#">About</a>
                 <a href="#">Advertising</a>
                 <a href="#">Business</a>
                 <a href="#">How Search works</a>
             </div>
-            </bot_footer .left>
-
-            <bot_footer .right>
-            <div class="bot-footer-right">
+            <div class= "right">
                 <a href="#">Settings</a>
                 <a href="#">Terms</a>
                 <a href="#">Privacy</a>
                 <a href="#">Consumer Information</a>
             </div>
-            </bot_footer .right>
         </bot_footer>
     </body>
 </html>
