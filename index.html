@@ -4,6 +4,11 @@
         <style>
             body {
                 font-family: arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                width: 100vw;
+                margin: 0;
             }
 
             a+a {
@@ -71,19 +76,17 @@
 
             top_footer {
                 background: #f2f2f2;
-                display: flex;
-                justify-content: flex-start;
                 color: rgba(0, 0, 0, 0.54);
                 border-bottom-color: #dadce0;
                 border-bottom-style: solid;
                 border-bottom-width: 1px;
                 padding: 15px 30px;
+                margin-top: auto;
             }
 
             bot_footer {
                 background: #f2f2f2;
                 display: flex;
-                flex-direction: row;
                 color: rgba(0, 0, 0, 0.54);
                 border-bottom-color: #dadce0;
                 border-bottom-style: solid;
@@ -113,39 +116,39 @@
 
     <body>
         <navbar>   
-        <div class="navbar" id="navbar">
-                <a href="#" >Gmail</a>
-                <a href="#">Images</a>
-        </div>
+            <div class="navbar" id="navbar">
+                    <a href="#" >Gmail</a>
+                    <a href="#">Images</a>
+            </div>
         </navbar>
 
         <logo>
-        <div class="logo">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        </div>
+            <div class="logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            </div>
         </logo>
 
         <search>
-        <div class="search">
-            <input type="text" size="50">
-        </div>
+            <div class="search">
+                <input type="text" size="50">
+            </div>
         </search>
 
         <submit>
-        <div class="submit"></div>
-            <button style="margin:5px;" type="submit">Google Search</button>
-            <button style="margin:5px;" type="submit">I'm Feeling Lucky</button>
-        </div>
+            <div class="submit"></div>
+                <button style="margin:5px;" type="submit">Google Search</button>
+                <button style="margin:5px;" type="submit">I'm Feeling Lucky</button>
+            </div>
         </submit>
 
         <offered>
-        <div class="offered">Google offered in: <a href="#">Français</a>
-        </div>
+            <div class="offered">Google offered in: <a href="#">Français</a>
+            </div>
         </offered>
 
         <top_footer>
-        <div class="top_footer">France
-        </div>
+            <div class="top_footer">France
+            </div>
         </top_footer>
         
         <bot_footer>
