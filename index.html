@@ -2,199 +2,113 @@
 <html>
     <head>
         <style>
-            body, html {
-                height: 100%;
-                width: 100%;
-                margin: 0;
-                }
-
-            a+a {
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-
-            .navbar{
-                grid-area: navbar;
+            navbar {
                 background: white;
                 display: flex;
+                justify-content: flex-end;   
+            }
+            
+            logo {
+                background: white;
+                display: flex;
+                justify-content: center;
+            }
+
+            search {
+                background: white;
+                display: flex;
+                justify-content: center;
+            }
+
+            submit {
+                background: white;
+                display: flex;
+                justify-content: center;
+            }
+
+            offered {
+                background: white;
+                display: flex;
+                justify-content: center;
+            }
+
+            top_footer {
+                background: white;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            bot_footer {
+                background: white;
+                display: flex;
+            }
+
+            bot_footer .left {
+                justify-content: flex-start;
+            }
+
+            bot_footer .right {
                 justify-content: flex-end;
-                padding: 15px 30px;
-                font-size: 13px;
-            }
-            .navbar a:link {
-                color: rgba(0, 0, 0, 0.87);
-                text-decoration: none;
-            }
-            .navbar a:hover {
-                color: rgba(0, 0, 0, 0.87);
-                text-decoration: underline;
             }
 
-            .logo {
-                grid-area: logo;
-                background: white;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                padding: 250px;
-                }
-
-            .search {
-                grid-area: search;
-                background: white;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: flex-start;
-                }
-
-            .submit-left {
-                grid-area: submit-left;
-                background: white;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: flex-start;
-                padding-left: 800px;
-                }
-            .submit-right {
-                grid-area: submit-right;
-                background: white;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: flex-start;
-                padding-right: 780px;
-                }
-
-            .offered {
-                grid-area: offered;
-                background: white;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: flex-start;
-                font-size: 13px;
-                }
-
-            .offered a:link {
-                text-decoration: none;
-                margin-left: 10px;
-                
-            }
-            .offered a:hover {
-                text-decoration: underline;
-                margin-left: 10px;
-            }
-
-            .top-footer {
-                grid-area: top-footer;
-                background: #f2f2f2;
-                color: rgba(0, 0, 0, 0.54);
-                border-bottom-color: #dadce0;
-                border-bottom-style: solid;
-                border-bottom-width: 1px;
-                display: flex;
-                flex-direction: row;
-                padding: 15px 30px;
-                }
-
-            .bot-footer-left {
-                grid-area: bot-footer-left;
-                background: #f2f2f2;
-                color: rgba(0, 0, 0, 0.54);
-                border-bottom-color: #dadce0;
-                border-bottom-style: solid;
-                border-bottom-width: 1px;
-                display: flex;
-                flex-direction: row;
-                padding: 15px 30px;
-                font-size: 14px;
-                }
-            .bot-footer-left a:link{
-                color: rgba(0, 0, 0, 0.54);
-                text-decoration: none;
-            }
-            .bot-footer-left a:hover{
-                color: rgba(0, 0, 0, 0.54);
-                text-decoration: underline;
-            }
-
-            .bot-footer-right {
-                grid-area: bot-footer-right;
-                background: #f2f2f2;
-                color: rgba(0, 0, 0, 0.54);
-                border-bottom-color: #dadce0;
-                border-bottom-style: solid;
-                border-bottom-width: 1px;
-                display: flex;
-                flex-direction: row-reverse;
-                padding: 15px 30px;
-                font-size: 14px;
-                }
-            .bot-footer-right a:link{
-                color: rgba(0, 0, 0, 0.54);
-                text-decoration: none;
-            }
-            .bot-footer-right a:hover{
-                color: rgba(0, 0, 0, 0.54);
-                text-decoration: underline;
-            }
-
-            .container {
-                font-family: arial, sans-serif;
-                font-size: 15px;
-                background: lightgrey;
-                height: 100vh;
-                width: 100vw;
-                display: grid;
-                grid-template-rows: 5% 34% 5% 5% 41% 5% 5%;
-                grid-template-columns: 1fr 1fr;
-                grid-template-areas:
-                    "navbar navbar"
-                    "logo logo"
-                    "search search"
-                    "submit-left submit-right"
-                    "offered offered"
-                    "top-footer top-footer"
-                    "bot-footer-left bot-footer-right";
-            }
         </style>    
     </head>
 
     <body>
-        <div class="container">
-            <div class="navbar" id="navbar">
+        <navbar>   
+        <div class="navbar" id="navbar">
                 <a href="#" >Gmail</a>
                 <a href="#">Images</a>
-            </div>
-            <div class="logo">
-                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-            </div>
-            <div class="search">
-                <input type="text" size="50">
-            </div>
-            <div class="submit-left">
-                <button type="submit">Google Search</button>
-            </div>
-            <div class="submit-right">
-                <button type="submit">I'm Feeling Lucky</button>
-            </div>
-            <div class="offered">Google offered in: <a href="#">Français</a></div>
-            <div class="top-footer">France</div>
-            <div class="bot-footer-left">
+        </div>
+        </navbar>
+
+        <logo>
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        </logo>
+
+        <search>
+        <div class="search">
+            <input type="text" size="50">
+        </div>
+        </search>
+
+        <submit>
+        <div class="submit"></div>
+            <button type="submit">Google Search</button>
+            <button type="submit">I'm Feeling Lucky</button>
+        </div>
+        </submit>
+
+        <offered>
+        <div class="offered">Google offered in: <a href="#">Français</a>
+        </div>
+        </offered>
+
+        <top_footer>
+        <div class="top_footer">France
+        </div>
+        </top_footer>
+        
+        <bot_footer>
+            <bot_footer .left>
+            <div class="bot_footer_left">
                 <a href="#">About</a>
                 <a href="#">Advertising</a>
                 <a href="#">Business</a>
                 <a href="#">How Search works</a>
             </div>
+            </bot_footer .left>
+
+            <bot_footer .right>
             <div class="bot-footer-right">
                 <a href="#">Settings</a>
                 <a href="#">Terms</a>
                 <a href="#">Privacy</a>
                 <a href="#">Consumer Information</a>
             </div>
-        </div>
+            </bot_footer .right>
+        </bot_footer>
     </body>
 </html>
